@@ -1,3 +1,4 @@
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "../styles/heroSection.css";
 
 export default function HeroSection() {
@@ -10,19 +11,39 @@ export default function HeroSection() {
             Hola, <br />
             Soy Dayana
           </h1>
-          <h3>UI/UX Designer, Practicante de programación Frontend</h3>
+          <h3>Bienvenid@ a mi porfolio como desarrolladora trainee.</h3>
 
           <div className="hero-buttons">
-            <a href="#contact" className="btn-primary">
-              Contáctame
+            <a href="/cv.pdf" className="btn-primary_" download>
+              Contactame
             </a>
-            <a href="/cv.pdf" className="btn-primary" download>
+            <a href="/cv.pdf" className="btn-primary_" download>
               Descargar CV
+            </a>
+          </div>
+          <div className="contact-icons">
+            <a
+              href="https://github.com/tu-usuario"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-background"
+            >
+              <FaGithub className="icon github" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tu-usuario/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-background"
+            >
+              <FaLinkedin className="icon linkedin" />
+            </a>
+            <a href="mailto:tuemail@example.com" className="icon-background">
+              <FaEnvelope className="icon email" />
             </a>
           </div>
         </div>
 
-        {/* Imagen */}
         <div className="hero-image">
           <img src="/profile.png" alt="Dayana" />
         </div>

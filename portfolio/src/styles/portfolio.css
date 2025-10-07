@@ -1,0 +1,9 @@
+.portfolio{
+    min-height: 100vh;
+    background-color: #ffc6ac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 5rem;
+
+}

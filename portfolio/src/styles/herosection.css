@@ -1,6 +1,6 @@
 .hero {
-    flex: 1;
-    background-color: #FFE5D9;
+    min-height: 100vh;
+    background-color: #ffc6ac;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,22 +13,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     box-sizing: border-box;
-    gap: 2rem;
+    gap: 5rem;
   }
   
   .hero-text h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1rem;
   }
   
   .hero-text h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 600;
     color: #374151;
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
   }
   
   .hero-buttons {
@@ -36,18 +35,19 @@
     gap: 2rem;
   }
   
-  .btn-primary {
+  .btn-primary_ {
     padding: 0.8rem 2rem;
-    font-size: 2.2rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 500;
     border-radius: 15px;
     text-decoration: none;
-    box-shadow: 10px 10px 0px #5DA9A6;
+    box-shadow: 10px 10px 0px #a8d2ee;
     background-color: #000;
     color: #fff;
+    margin-top: 1rem;
     transition: all 0.3s ease;
   }
-.btn-primary:hover {
+.btn-primary_:hover {
     background-color: #fff;
     color: #000;
     border: 1px solid #000;
@@ -57,4 +57,32 @@
     border-radius: 15px;
     box-shadow: 8px 8px 0px #000;
   }
+  
+  .contact-icons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+
+
+  }
+  .icon-background {
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 3px 3px 0 #000; /* efecto 3D */
+  }
+  .icon {
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    color: #2E2E2E ;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .icon.github:hover { color: #181717; }   /* negro GitHub */
+  .icon.linkedin:hover { color: #0077B5; } /* azul LinkedIn */
+  .icon.email:hover { color: #D44638; }    /* rojo Gmail */
   

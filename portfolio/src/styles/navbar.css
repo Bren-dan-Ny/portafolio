@@ -8,7 +8,7 @@
     position: fixed;
     padding: 0 5rem;
 width: 100%;
-height: 110px;
+height: 100px;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -38,12 +38,12 @@ height: 110px;
     border-radius: 50%;
     background: white;
     z-index: -1;
-    box-shadow: 3px 3px 0 black; /* efecto 3D */
+    box-shadow: 3px 3px 0 black;
   }
 
   nav a {
-    font-size: 2rem;
-    margin: 0 1.2rem;
+    font-size: 1.3rem;
+    margin: 0 1.5rem;
     text-decoration: none;
     font-weight: 600;
     color: white;

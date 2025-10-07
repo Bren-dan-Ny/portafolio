@@ -8,10 +8,12 @@ function Navbar() {
         <div className="logo back"></div>
       </div>
       <nav>
-        <a href="#home">Inicio</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#contact">Contacto</a>
+        <a href="#home">INICIO</a>
+        <a href="#about">SOBRE MI</a>
+        <a href="#projects">PORFOLIO</a>
+        <a href="#educacion">EDUCACIÓN</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#contact">CONTACTO</a>
       </nav>
     </header>
   );

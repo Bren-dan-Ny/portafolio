@@ -1,0 +1,8 @@
+.skills{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;   /* lo juntamos aquí */
+    background-color: #ffc6ac;
+}
