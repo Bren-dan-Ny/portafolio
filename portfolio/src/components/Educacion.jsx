@@ -10,7 +10,14 @@ function Educacion() {
             <h3>Especialización en Desarrollo Front-end</h3>
             <h4>Instituto IDAT</h4>
             <p>Curso de 210 horas</p>
-            <a href="#" className="btn-primary">
+            <a
+              href={`${
+                import.meta.env.BASE_URL
+              }certificados/frontend-certificado.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
               Certificado
             </a>
           </div>
@@ -24,7 +31,14 @@ function Educacion() {
             <h3>Diseño UX/UI</h3>
             <h4>Instituto IDAT</h4>
             <p>Curso de 32 horas</p>
-            <a href="#" className="btn-primary">
+            <a
+              href={`${
+                import.meta.env.BASE_URL
+              }certificados/UX-UI-certificado.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
               Certificado
             </a>
           </div>
