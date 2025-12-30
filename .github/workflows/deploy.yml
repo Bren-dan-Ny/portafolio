@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node
@@ -25,16 +25,16 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: portafolio
+        working-directory: portfolio
 
       - name: Build project
         run: npm run build
-        working-directory: portafolio
+        working-directory: portfolio
 
-      - name: Upload Pages artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: portafolio/dist
+          path: portfolio/dist
 
   deploy:
     needs: build
