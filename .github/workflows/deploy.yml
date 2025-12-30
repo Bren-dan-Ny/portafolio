@@ -3,7 +3,7 @@ name: Deploy Vite Portfolio to GitHub Pages
 on:
   push:
     branches:
-      - main # cambia a master si usas master
+      - main
 
 permissions:
   contents: read
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Setup Node
