@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import "../styles/heroSection.css";
+import "../styles/herosection.css";
 
 export default function HeroSection() {
   return (
