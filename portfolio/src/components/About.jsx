@@ -23,7 +23,11 @@ function About() {
         </p>
 
         <div className="about-buttons">
-          <a href="/cv.pdf" className="btn-primary__" download>
+          <a
+            href="mailto:lhuanaclopez14@gmail.com"
+            className="btn-primary__"
+            download
+          >
             Contáctame
           </a>
           <a href="/cv.pdf" className="btn-primary__" download>
