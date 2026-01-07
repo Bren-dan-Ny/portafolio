@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "../styles/herosection.css";
+import profile from "../assets/profile.png";
 
 export default function HeroSection() {
   return (
@@ -14,16 +15,20 @@ export default function HeroSection() {
           <h3>Bienvenid@ a mi porfolio como desarrolladora trainee.</h3>
 
           <div className="hero-buttons">
-            <a href="/cv.pdf" className="btn-primary_" download>
+            <a href="#contact" className="btn-primary_">
               Contactame
             </a>
-            <a href="/cv.pdf" className="btn-primary_" download>
-              Descargar CV
+            <a
+              href={`${import.meta.env.BASE_URL}curriculum/cv.pdf`}
+              className="btn-primary_"
+              target="_blank"
+            >
+              Ver CV
             </a>
           </div>
           <div className="contact-icons">
             <a
-              href="https://github.com/tu-usuario"
+              href="https://github.com/Bren-dan-Ny"
               target="_blank"
               rel="noopener noreferrer"
               className="icon-background"
@@ -31,21 +36,16 @@ export default function HeroSection() {
               <FaGithub className="icon github" />
             </a>
             <a
-              href="https://www.linkedin.com/in/tu-usuario/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:lhuanaclopez14@gmail.com"
               className="icon-background"
             >
-              <FaLinkedin className="icon linkedin" />
-            </a>
-            <a href="mailto:tuemail@example.com" className="icon-background">
               <FaEnvelope className="icon email" />
             </a>
           </div>
         </div>
 
         <div className="hero-image">
-          <img src="/profile.png" alt="Dayana" />
+          <img src={profile} alt="Dayana" />
         </div>
       </div>
     </section>

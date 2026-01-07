@@ -1,61 +1,61 @@
-.about { 
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-    align-items: center;   /* lo juntamos aquí */
-    background-color: #ffc6ac;
-  }
-  
-  .about-container {
-    background-color: #A5D8FF;   /* azul cielo suave */
-    border-radius: 20px;
-    border: 2px solid #000;
-    padding: 3rem;
-    margin: 5rem 0 0 0; 
-    box-shadow: 8px 8px 0px #E5989B;
-    transition: transform 0.3s ease;
-  }
-  .about-container:hover {
-    transform: translateY(-5px);
-  }
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc6ac;
+}
 
-  h2 {
-    font-size: 2.8rem;
-    text-transform: uppercase;
-    color: #2E2E2E;
-    margin: 0 0 2rem 0;
-  }
-  p {
-    font-size: 1.2rem;
-    color: #2E2E2E;
-    max-width: 800px;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-  }
+.about-container {
+  background-color: #a5d8ff; /* azul cielo suave */
+  border-radius: 20px;
+  max-width: 900px;
+  border: 2px solid #000;
+  padding: 3rem;
+  margin: 5rem 0 0 0;
+  box-shadow: 8px 8px 0px #e5989b;
+  transition: transform 0.3s ease;
+}
+.about-container:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  color: #2e2e2e;
+  margin: 0 0 2rem 0;
+}
+p {
+  font-size: 1.2rem;
+  color: #2e2e2e;
+  max-width: 800px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
 .about-buttons {
-    display: flex;
-    gap: 2rem;
-  }  
+  display: flex;
+  gap: 2rem;
+}
 .btn-primary__ {
-    padding: 0.8rem 2rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    border-radius: 15px;
-    text-decoration: none;
-    box-shadow: 8px 8px 0px #0077b6;
-    background-color: #000;
-    color: #fff;
-    margin-top: 1rem;
-    transition: all 0.3s ease;
-  }
+  padding: 0.8rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 15px;
+  text-decoration: none;
+  box-shadow: 8px 8px 0px #0077b6;
+  background-color: #000;
+  color: #fff;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
 .btn-primary__:hover {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
-  }
-  a {
-    color: #0077b6;
-    font-weight: bold;
-  }
- 
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+a {
+  color: #0077b6;
+  font-weight: bold;
+}

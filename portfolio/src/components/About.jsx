@@ -23,15 +23,16 @@ function About() {
         </p>
 
         <div className="about-buttons">
-          <a
-            href="mailto:lhuanaclopez14@gmail.com"
-            className="btn-primary__"
-            download
-          >
+          <a href="#contact" className="btn-primary__">
             Contáctame
           </a>
-          <a href="/cv.pdf" className="btn-primary__" download>
-            Descargar CV
+          <a
+            href={`${import.meta.env.BASE_URL}curriculum/cv.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary__"
+          >
+            Ver CV
           </a>
         </div>
       </div>

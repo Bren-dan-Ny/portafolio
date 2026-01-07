@@ -5,6 +5,7 @@ import Portfolio from "./components/Portfolio";
 import Educacion from "./components/Educacion";
 import Skills from "./components/Skills";
 import Contacto from "./components/Contacto";
+import "./styles/responsive.css";
 
 function App() {
   return (
