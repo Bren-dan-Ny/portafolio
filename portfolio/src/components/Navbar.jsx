@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BsTelephoneFill } from "react-icons/bs";
 import "../styles/navbar.css";
 
 function Navbar() {
@@ -19,7 +20,9 @@ function Navbar() {
         <a href="#projects">PORFOLIO</a>
         <a href="#educacion">EDUCACIÓN</a>
         <a href="#skills">SKILLS</a>
-        <a href="#contact">CONTACTO</a>
+        <a href="#contact" className="nav-icon" title="Contacto">
+          <BsTelephoneFill />
+        </a>
       </nav>
     </header>
   );

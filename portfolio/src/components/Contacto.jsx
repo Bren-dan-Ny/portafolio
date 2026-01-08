@@ -43,9 +43,9 @@ function Contacto() {
         <div className="tecnologias">
           <h5>Este sitio está desarrollado con:</h5>
           <div className="tags">
-            <span className="tag html">HTML5</span>
-            <span className="tag css">CSS3</span>
-            <span className="tag react">React</span>
+            <span className="tag-contact html">HTML5</span>
+            <span className="tag-contact css">CSS3</span>
+            <span className="tag-contact react">React</span>
           </div>
         </div>
       </div>

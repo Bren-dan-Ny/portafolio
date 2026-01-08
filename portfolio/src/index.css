@@ -3,7 +3,6 @@
 /* Asegurar que html y body ocupen todo el alto */
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;

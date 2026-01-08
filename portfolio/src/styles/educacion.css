@@ -1,60 +1,67 @@
-.educacion{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-    align-items: center;
-    background-color: #ffc6ac;
-
+.educacion {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc6ac;
 }
 .educacion-container {
-    background-color: #A5D8FF;
-    border-radius: 20px;
-    border: 2px solid #000;
-    padding: 3rem;
-    margin: 5rem 0 0 0; 
-    box-shadow: 8px 8px 0px #E5989B;
+  background-color: #a5d8ff;
+  border-radius: 20px;
+  max-width: 900px;
+  border: 2px solid #000;
+  padding: 3rem;
+  margin: 5rem 1.5rem 0 1.5rem;
+
+  box-shadow: 8px 8px 0px #e5989b;
+  transition: transform 0.3s ease;
 }
+.educacion-container:hover {
+  transform: translateY(-5px);
+}
+
 .education-item {
-    display: flex;
-    justify-content: space-between;
-    gap: 4rem;
-    padding: 1.5rem 2rem;
-    margin: 1rem 0;
-    border-left: 5px solid #000; 
-    background-color: #fff;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .education-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-.title-education h3, .title-education h4 {
-    text-transform: uppercase;
-    margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 1.5rem 2rem;
+  margin: 1rem 0;
+  border-left: 5px solid #000;
+  background-color: #fff;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title-education h3,
+.title-education h4 {
+  text-transform: uppercase;
+  margin: 0;
 }
 .title-education h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .title-education h4 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 .title-education p {
-    margin: 1rem 0;
-    font-size: 1rem;
-    font-weight: 500;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
 }
 .date-education h5 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #555;
-    margin: 0;
-  }
-  
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  margin: 0;
+}
+
 .btn-primary {
   display: inline-block;
   font-size: 1rem;

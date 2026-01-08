@@ -24,17 +24,15 @@ function Portfolio() {
             <div className="project-info">
               <h3>E-commerce Dummy</h3>
               <p>
-                Aplicación web e-commerce desarrollada con React, que consume la
-                API de DummyJSON para mostrar productos dinámicamente, con
-                carrito de compras y diseño responsivo.
+                E-commerce en React con consumo de API y carrito de compras.
               </p>
               {/* Tecnologías */}
               <div className="technologies">
-                <span className="tag react">React</span>
-                <span className="tag js">JavaScript</span>
-                <span className="tag html">HTML</span>
-                <span className="tag css">CSS</span>
-                <span className="tag bootstrap">Bootstrap</span>
+                <span className="tag-portfolio react">React</span>
+                <span className="tag-portfolio js">JavaScript</span>
+                <span className="tag-portfolio html">HTML</span>
+                <span className="tag-portfolio css">CSS</span>
+                <span className="tag-portfolio bootstrap">Bootstrap</span>
               </div>
               {/* Enlaces git y demo */}
               <div className="project-links">
@@ -71,17 +69,15 @@ function Portfolio() {
             <div className="project-info">
               <h3>To-Do App</h3>
               <p>
-                Aplicación To-Do desarrollada con React, enfocada en el manejo
-                eficiente del estado y la experiencia de usuario. Permite
-                gestionar tareas con actualizaciones en tiempo real sin recargar
-                la página.
+                To-Do app en React con manejo de estado y actualizaciones en
+                tiempo real.
               </p>
               {/* Tecnologías */}
               <div className="technologies">
-                <span className="tag react">React</span>
-                <span className="tag js">JavaScript</span>
-                <span className="tag html">HTML</span>
-                <span className="tag css">CSS</span>
+                <span className="tag-portfolio react">React</span>
+                <span className="tag-portfolio js">JavaScript</span>
+                <span className="tag-portfolio html">HTML</span>
+                <span className="tag-portfolio css">CSS</span>
               </div>
               {/* Enlaces git y demo */}
               <div className="project-links">
@@ -117,18 +113,14 @@ function Portfolio() {
             {/* Informacion del proyecto */}
             <div className="project-info">
               <h3>Pokedex</h3>
-              <p>
-                Aplicación web interactiva que consume la PokeAPI para mostrar
-                información detallada de Pokémon. Permite explorar, buscar y
-                visualizar datos de cada Pokémon de forma dinámica y responsiva.
-              </p>
+              <p>Pokédex interactiva en React con consumo de PokeAPI.</p>
               {/* Tecnologías */}
               <div className="technologies">
-                <span className="tag react">React</span>
-                <span className="tag js">JavaScript</span>
-                <span className="tag html">HTML</span>
-                <span className="tag css">CSS</span>
-                <span className="tag bootstrap">Bootstrap</span>
+                <span className="tag-portfolio react">React</span>
+                <span className="tag-portfolio js">JavaScript</span>
+                <span className="tag-portfolio html">HTML</span>
+                <span className="tag-portfolio css">CSS</span>
+                <span className="tag-portfolio bootstrap">Bootstrap</span>
               </div>
               {/* Enlaces git y demo */}
               <div className="project-links">

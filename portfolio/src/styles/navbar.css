@@ -7,11 +7,12 @@
   border-bottom-right-radius: 2rem;
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 80px;
   top: 0;
   left: 0;
   z-index: 1000;
   box-sizing: border-box;
+  padding: 0 1.8rem;
 }
 
 .logo-container {
@@ -22,17 +23,22 @@
   border: black 2px solid;
   color: black;
   font-weight: 800;
-  font-size: 2.2rem;
-  width: 60px;
-  height: 60px;
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 nav a {
   font-size: 1rem;
-  margin: 0 1.5rem;
+  margin: 0 1rem;
   text-decoration: none;
   font-weight: 600;
   color: white;
@@ -42,6 +48,21 @@ nav a {
 nav a:hover {
   color: #ffe5d9;
 }
+.nav-icon {
+  margin-left: 1.2rem;
+  font-size: 1.5rem;
+  align-items: center;
+  line-height: 0;
+}
+
+.nav-icon svg {
+  transition: transform 0.3s ease;
+}
+
+.nav-icon:hover svg {
+  transform: scale(1.2);
+}
+
 .menu-toggle {
   display: none;
   background: none;

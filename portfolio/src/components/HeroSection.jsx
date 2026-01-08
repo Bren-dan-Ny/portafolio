@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
 import "../styles/herosection.css";
 import profile from "../assets/profile.png";
 
