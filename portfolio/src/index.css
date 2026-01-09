@@ -16,3 +16,11 @@ body {
   min-height: 100%;
   box-sizing: border-box;
 }
+/*subtitulos de todo el sitio */
+h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #2e2e2e;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}

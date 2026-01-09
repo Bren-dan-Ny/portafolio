@@ -32,6 +32,7 @@
 
 .hero-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -64,7 +65,8 @@
 }
 .contact-icons {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-top: 3rem;
 }
 .icon-background {
@@ -86,10 +88,14 @@
 
 .icon.github:hover {
   color: #181717;
-} /* negro GitHub */
+}
 .icon.linkedin:hover {
   color: #0077b5;
-} /* azul LinkedIn */
+}
 .icon.email:hover {
   color: #d44638;
-} /* rojo Gmail */
+}
+
+.hero-mobile {
+  display: none;
+}
