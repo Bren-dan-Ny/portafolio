@@ -35,6 +35,7 @@
     flex-direction: column;
     padding: 1.5rem 0;
     gap: 1.2rem;
+    z-index: 1000;
   }
   nav a {
     font-size: 1.2rem;
@@ -76,14 +77,12 @@
     gap: 2rem;
   }
   .hero-image img {
-    max-width: 100%;
-    width: 350px;
+    width: min(350px, 90vw);
   }
   .social-icons {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: end;
+    align-items: flex-start;
     gap: 1rem;
   }
   .hero-buttons {
