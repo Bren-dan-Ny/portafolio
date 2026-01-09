@@ -59,10 +59,7 @@ export default function HeroSection() {
             Hola, <br />
             Soy Dayana
           </h1>
-          <h3>
-            Bienvenid@ a mi porfolio <br />
-            como desarrolladora trainee.
-          </h3>
+          <h3>Bienvenid@ a mi porfolio como desarrolladora trainee.</h3>
         </div>
         {/*imagen , botones y redes sociales*/}
         <div className="hero-media">
