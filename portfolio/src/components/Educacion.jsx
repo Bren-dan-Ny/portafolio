@@ -1,6 +1,81 @@
 import "../styles/educacion.css";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Educacion() {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // 1️⃣ CONTENEDOR GENERAL
+      gsap.fromTo(
+        ".educacion-container",
+        {
+          y: 80,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".educacion",
+            start: "top 80%",
+            once: true,
+          },
+        }
+      );
+
+      // 2️⃣ TARJETAS
+      gsap.fromTo(
+        ".education-item",
+        {
+          y: 40,
+          opacity: 0,
+          scale: 0.97,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 0.8,
+          ease: "power3.out",
+          stagger: 0.25,
+          scrollTrigger: {
+            trigger: ".educacion",
+            start: "top 75%",
+            once: true,
+          },
+        }
+      );
+
+      // 3️⃣ CONTENIDO INTERNO (muy sutil)
+      gsap.fromTo(
+        [".title-education", ".date-education"],
+        {
+          y: 15,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.5,
+          ease: "power2.out",
+          stagger: 0.1,
+          scrollTrigger: {
+            trigger: ".educacion",
+            start: "top 75%",
+            once: true,
+          },
+        }
+      );
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <section className="educacion" id="educacion">
       <div className="educacion-container">

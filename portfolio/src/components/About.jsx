@@ -1,6 +1,28 @@
 import "../styles/about.css";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function About() {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".about-container", {
+        scrollTrigger: {
+          trigger: ".about-container",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+      });
+    });
+
+    return () => ctx.revert(); // 👈 evita bugs en StrictMode
+  }, []);
   return (
     <section id="about" className="about">
       <div className="about-container">

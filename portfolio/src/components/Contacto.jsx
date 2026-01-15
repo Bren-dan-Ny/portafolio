@@ -1,6 +1,56 @@
 import "../styles/contacto.css";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Contacto() {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // 1️⃣ Contenedor – mini zoom general
+      gsap.fromTo(
+        ".contacto-container",
+        {
+          scale: 0.97,
+          opacity: 0,
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 0.6,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: ".contacto",
+            start: "top 80%",
+            once: true,
+          },
+        }
+      );
+
+      gsap.fromTo(
+        [".contacto-item", ".tecnologias", ".footer"],
+        {
+          y: 20,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.5,
+          ease: "power3.out",
+          stagger: 0.15,
+          scrollTrigger: {
+            trigger: ".contacto",
+            start: "top 78%",
+            once: true,
+          },
+        }
+      );
+    });
+
+    return () => ctx.revert();
+  }, []);
   return (
     <section className="contacto" id="contact">
       <div className="contacto-container">
@@ -52,8 +102,8 @@ function Contacto() {
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <p class="footer-location">
+      <footer className="footer">
+        <p className="footer-location">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="22"
@@ -65,7 +115,7 @@ function Contacto() {
           </svg>
           Lima - Perú
         </p>
-        <p class="footer-copy">© 2025 | Diseñado con por Lhuana</p>
+        <p className="footer-copy">© 2025 | Diseñado con por Lhuana</p>
       </footer>
     </section>
   );

@@ -1,6 +1,79 @@
 import "../styles/skills.css";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Skills() {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // CONTENEDOR GENERAL
+      gsap.fromTo(
+        ".skills-container",
+        {
+          y: 80,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".skills",
+            start: "top 85%",
+            once: true,
+          },
+        }
+      );
+
+      // GRUPOS DE SKILLS
+      gsap.fromTo(
+        ".skills-group",
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          ease: "power3.out",
+          stagger: 0.25,
+          scrollTrigger: {
+            trigger: ".skills-container",
+            start: "top 80%",
+            once: true,
+          },
+        }
+      );
+
+      // TAGS (opcional, sutil)
+      gsap.fromTo(
+        ".skills-group .tag",
+        {
+          scale: 0.9,
+          opacity: 0,
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 0.4,
+          ease: "back.out(1.7)",
+          stagger: 0.05,
+          scrollTrigger: {
+            trigger: ".skills-container",
+            start: "top 75%",
+            once: true,
+          },
+        }
+      );
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <section className="skills" id="skills">
       <div className="skills-container">

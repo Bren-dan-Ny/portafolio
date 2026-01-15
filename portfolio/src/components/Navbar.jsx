@@ -23,7 +23,7 @@ function Navbar() {
           SOBRE MI
         </a>
         <a href="#projects" onClick={closeMenu}>
-          PORFOLIO
+          PORTFOLIO
         </a>
         <a href="#educacion" onClick={closeMenu}>
           EDUCACIÓN

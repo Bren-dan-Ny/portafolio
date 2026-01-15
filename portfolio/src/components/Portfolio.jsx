@@ -4,8 +4,60 @@ import { HiLink } from "react-icons/hi";
 import demo1 from "../assets/demo1.png";
 import demo2 from "../assets/demo2.png";
 import demo3 from "../assets/demo3.png";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Portfolio() {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // 1️⃣ CONTENEDOR GENERAL
+      gsap.fromTo(
+        ".port-container",
+        {
+          y: 80,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".portfolio",
+            start: "top 85%",
+            once: true,
+          },
+        }
+      );
+
+      // 2️⃣ TARJETAS
+      gsap.fromTo(
+        ".project-item",
+        {
+          y: 40,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          ease: "power3.out",
+          stagger: 0.25,
+          scrollTrigger: {
+            trigger: ".port-projects",
+            start: "top 80%",
+            once: true,
+          },
+        }
+      );
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <section className="portfolio" id="projects">
       <div className="port-container">

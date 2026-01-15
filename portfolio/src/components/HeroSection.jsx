@@ -1,11 +1,43 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-
+import { FaGithub, FaEnvelope } from "react-icons/fa";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import "../styles/herosection.css";
 import profile from "../assets/profile.png";
 
 export default function HeroSection() {
+  const heroRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".hero-text > *", {
+        scrollTrigger: {
+          trigger: heroRef.current,
+          start: "top 80%",
+        },
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "power3.out",
+      });
+
+      gsap.from(".hero-image img", {
+        scrollTrigger: {
+          trigger: heroRef.current,
+          start: "top 80%",
+        },
+        scale: 0.9,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+      });
+    }, heroRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="hero" id="home">
+    <section className="hero" id="home" ref={heroRef}>
       <div className="hero-container">
         {/* Texto */}
         <div className="hero-text">
